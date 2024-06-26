@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+  <style>
+    body{
+      background-color: #eee;
+    }
+    body::-webkit-scrollbar{
+      display: none;
+    }
+    .displaynews {
+      /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+      padding: 0 3%;
+      
+    }
+    #cards-bg{
+      /* border: 2px solid red; */
+      margin-top: 98px;
+      /* border: 2px solid red; */
+      background-image: url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=1905&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-position: center;
+      background-size:cover;
+      background-repeat: no-repeat;
+
+    }
+    #container{
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 20px;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      /* background-color: #222; */
+      align-items: center;
+      justify-content: center;
+      /* border: 2px solid; */
+      margin-top: 25px;
+      background-image: url('https://images.pexels.com/photos/314726/pexels-photo-314726.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: cover;
+    }
+    .card-body1:hover{
+      cursor: pointer;
+      transform: scale(1.10);
+      transition:0.3s linear;
+      border-radius: 6px;
+      background-color: #eee;
+      color: #222;
+     
+
+    }
+    .card-body1{
+      border: 2px solid;
+      height: 210px;
+      outline: none;
+      border: none;
+    }
+    
+    .card-text1{
+      height: 90px;
+      overflow: scroll;
+    }
+    .card-text1::-webkit-scrollbar{
+      display: none;
+    }
+    .newlistchanges{
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="conatiner">
+    <div class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
+      <a class="navbar-brand p border px-4" href="#"  style=" font-weight: bold ;margin-left : 40px;">
+       Cricket Live
+        <!-- <img
+          src="./images/123s Clipart Transparent PNG Hd, Icc Cricket World Cup Cricket Championship, Icc Cricket World Cup, Cricket Championship PNG Image For Free Download.jpeg"
+          alt="image" style="border-radius: 50%;" width="50" class="ms-5"> -->
+      </a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse d-flex-sm-row justify-content-center" id="menu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="./internationmatches.html" class="nav-link fs-6 active bg-danger m-2 text-center rounded">International Matches</a>
+          </li>
+          <li class="nav-item">
+            <a href="./leaguematches.html" class="nav-link fs-6 active bg-danger m-2 rounded text-center">League Matches</a>
+          </li>
+          <li class="nav-item">
+            <a href="./women.html" class="nav-link fs-6 active bg-danger m-2 rounded text-center">Women Matches</a>
+          </li>
+          <li class="nav-item">
+            <a href="./domestic.html" class="nav-link fs-6 active bg-danger m-2 rounded text-center">Domestic Matches</a>
+          </li>
+          <li class="nav-item">
+            <a href="#newlist" class="nav-link fs-6 active bg-danger m-2 rounded text-center">News List</a>
+          </li>
+          <li class="nav-item "> 
+            <a href="./schedule_list.html" class="nav-link fs-6 active bg-danger m-2 rounded text-center">Schedule</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- cards -->
+    <div class="d-flex justify-content-evenly flex-wrap" id="cards-bg">
+    <div class="card m-5" style="width: 17rem;">
+      <img src="https://i3.wp.com/etvbharatimages.akamaized.net/etvbharat/prod-images/28-09-2023/1200-675-19632497-841-19632497-1695909573315.jpg?strip=all" height="170px" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title ">International matches</h5>
+        <a href="./internationmatches.html" class="btn btn-primary">Click here to view </a>
+      </div>
+    </div>
+    <div class="card m-5" style="width: 17rem;">
+      <img src="https://img.cricketnmore.com/uploads/2020/09/IPL-2020-Team-Captains.jpg" height="170px" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">League matches</h5>
+        <a href="./league.html" class="btn btn-primary">Click here to view </a>
+      </div>
+    </div>
+    <div class="card m-5" style="width: 17rem;">
+      <img src="https://images.indianexpress.com/2022/10/india-womens-cricket-2022-1.jpg" height="170px" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Women matches</h5>
+        <a href="./women.html" class="btn btn-primary">Click here to view </a>
+      </div>
+    </div>
+    <div class="card m-5" style="width: 17rem;">
+      <img src="https://d3lzcn6mbbadaf.cloudfront.net/media/details/Untitled-120220808112843.jpg" height="170px" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Domestic matches</h5>
+        <a href="./domestic.html" class="btn btn-primary">Click here to view </a>
+      </div>
+    </div>
+
+  </div>
+
+  <span class="d-block p-2 text-white bg-primary bg-gradient text-center fs-5 mt-5 ms-5 me-5 newlistchanges " id="newlist">News list</span>
+    <div class="container" id="container">
+         </div>
+  
+  <!-- Footer page... -->
+
+<div class="w-auto  container-fluid d-flex flex-cols justify-content-center mt-5 bg-dark text-white">
+      <div class="row ">
+    <div class="col-sm-12  py-4 text-center" style="color: red;">CricketLive.com</div>
+    <p class=" px-4 text-center">Cricket is a popular bat-and-ball sport that originated in England and is now played globally. The game involves two teams, typically of eleven players each, taking turns to bat and bowl. The objective is to score more runs than the opposing team. </p>
+    <div class="col-sm-12 flex gap-4 ">
+      <ul class="d-flex justify-content-center  gap-2 flex-wrap" style="list-style: none ; font-weight: 600;">
+        <li>Home</li>
+        <li>League</li>
+        <li>Schedulelist</li>
+        <li>Newlist</li>
+        <li>Domestic</li>
+      </ul>
+      </div>
+    <div class="col-sm-12 gap-6 flex mb-4 text-center">
+      <img src="./facebook.png" style="width: 30px;" alt="">
+      <img src="./instagram (1).png" style="width: 35px;" alt="">
+      <img src="./whatsapp (1).png" style="width: 30px;" alt="">
+    </div>
+   
+  </div>
+
+</div>
+
+
+ 
+  <script src="./index.js"></script>
+</body>
+
+</html>
