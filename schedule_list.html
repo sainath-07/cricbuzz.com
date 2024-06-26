@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="displaydata overflow-scroll">
+        <div class="displaydata ">
             <div class="d-flex justify-content-between align-items-center gap-2 bg-primary p-2 ">
                 <a href="./index.html" class="text-white text-decoration-none changesback"><i class="fas fa-arrow-left"></i></a>
                 <div class="text-white fs-4">Schedule List Matches</div>
@@ -23,6 +23,7 @@
                 <a href="#" style="visibility: hidden;">back</a>
             </div>
             
+            <div style="overflow: auto;">
             <table class="table table-striped table-hover mt-3">
                 <thead>
                     <tr class="text-white bg-dark">
@@ -37,6 +38,7 @@
                 </thead>
                 <tbody id="tbody"></tbody>
             </table>
+        </div>
         </div>
     </div>
 

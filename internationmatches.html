@@ -15,7 +15,7 @@
 
 
   <div class="container-fluid">
-    <div class="displaydata overflow-scroll">
+    <div class="displaydata ">
       <div class="d-flex justify-content-between align-items-center border border-success fw-bold bg-primary p-2 ">
         <a href="./index.html" class="text-white text-decoration-none changesback"><i class="fas fa-arrow-left fa-xl px-2"></i></a>
         <div class="text-white ">International Matches</div>
@@ -23,7 +23,9 @@
         <a href="#" style="visibility: hidden;">back</a>
       </div>
       
-      <table class="table table-striped ">
+
+      <div style="overflow: auto;">
+      <table class="table table-striped " >
         <thead>
           <tr class="text-white bg-dark">
             <th >Match Tour</th>
@@ -34,6 +36,7 @@
         </thead>
         <tbody id="tbody"></tbody>
       </table>
+    </div>
     </div>
   </div>
 
